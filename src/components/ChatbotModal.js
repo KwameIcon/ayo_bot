@@ -200,7 +200,7 @@ const ChatbotModal = ({ onClose, messages, setMessages }) => {
             </header>
 
             {/* Conversation Area */}
-            <div className="flex-1 p-4 overflow-y-auto bg-gray-50 space-y-5">
+            <div className="flex-1 p-4 overflow-y-auto bg-black/90 space-y-5">
                 {messages.map((msg, index) => (
                     <Message key={index} message={msg} />
                 ))}
@@ -213,7 +213,7 @@ const ChatbotModal = ({ onClose, messages, setMessages }) => {
             </div>
 
             {/* Input Area */}
-            <div className="p-3 border-t border-gray-200 bg-white flex items-center">
+            <div className="p-3 border-t border-[#00959c] bg-black/90 flex items-center">
                 <input
                     type="text"
                     placeholder={isLoading ? "Please wait for the response..." : "Type a message..."}
@@ -221,9 +221,9 @@ const ChatbotModal = ({ onClose, messages, setMessages }) => {
                     onChange={(e) => setUserInput(e.target.value)}
                     onKeyDown={handleKeyPress}
                     disabled={isLoading} // Disable input while loading
-                    className={`flex-1 border border-gray-300 rounded-full py-3 px-4 mr-3 
-                               focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700
-                               ${isLoading ? 'bg-gray-100 cursor-not-allowed' : 'bg-white'}`}
+                    className={`flex-1 border border-[#00959c] rounded-full py-3 px-4 mr-3 
+                               focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-300
+                               ${isLoading ? 'bg-[#50a6ab] cursor-not-allowed' : 'bg-black/90'}`}
                     aria-label="Type your message"
                 />
                 <button

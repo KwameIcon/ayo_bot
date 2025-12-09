@@ -39,7 +39,6 @@ function App() {
       <div className='fixed inset-0 w-screen h-screen bg-black opacity-60 z-2'></div>
 
           <div>
-            <h1>My React App with DigitalOcean Chatbot</h1>
             <div>
               <>
                 {/* Conditional rendering of the modal */}

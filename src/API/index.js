@@ -38,7 +38,7 @@ export const getAgentResponse = async (message) => {
 
 export const requestData = async ({ key, value }) => {
     // return console.log("Requesting data with key:", key, "and value:", value);
-    const response = await fetch(`https://cai.coverhub.app/api/chatbot/`, {
+    const response = await fetch(`https://cai.coverhub.app/api/chatbot/`, { 
         method: 'post',
         headers: {
             'Content-Type': 'application/json',

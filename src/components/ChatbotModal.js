@@ -172,7 +172,7 @@ const ChatbotModal = ({ onClose, messages, setMessages }) => {
 
     return (
         <div
-            className="fixed bottom-24 right-5 w-96 h-96 z-40 bg-white rounded-xl shadow-2xl shadow-[#00959c]/50 flex flex-col overflow-hidden transition-all duration-300 transform origin-bottom-right"
+            className="fixed bottom-24 left-5 w-96 h-96 z-40 bg-white rounded-xl shadow-2xl shadow-[#00959c]/50 flex flex-col overflow-hidden transition-all duration-300 transform origin-bottom-right"
             style={{
                 width: initialModalSize.width,
                 height: initialModalSize.height

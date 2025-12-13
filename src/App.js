@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import ChatbotModal, { getCurrentTime } from './components/ChatbotModal';
-import ChatbotButton from './components/ChatbotButton';
+import { getCurrentTime } from './components/ChatbotModal';
 import video from './assets/4k Video ｜ Technology Looped Background ｜ No Copyright Loop Background Video.mp4';
 import Chatbot from './components/chatbot';
 
@@ -41,17 +40,15 @@ function App() {
 
       <Chatbot />
 
-      <div>
+      {/* <div>
         <div>
           <>
-            {/* Conditional rendering of the modal */}
             {isOpen && <ChatbotModal onClose={toggleChatbot} messages={messages} setMessages={setMessages} />}
 
-            {/* The toggle button is always rendered */}
             <ChatbotButton isOpen={isOpen} onClick={toggleChatbot} />
           </>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
